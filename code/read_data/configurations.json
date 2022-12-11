@@ -1,0 +1,207 @@
+{  
+   "kitti":{  
+      "detection":{  
+         "rows":4,
+         "cols":5,
+         "radius":4,
+         "npoints":30,
+         "bins":128,
+         "minQuality":0.01,
+         "FilterSize":5,
+         "MinContrast":0.05,
+         "MetricThreshold":200,
+         "Threshold":0.0001,
+         "NumOctaves":1,
+         "NumScaleLevels":8,
+         "ScaleFactor":1.5,
+         "NumLevels": 8
+      },
+      "matching":{  
+         "maxBidirectionalError":3,
+         "radius_to_new_feature":2,
+         "KLT_score_limit":0.9965,
+         "block_size":35
+      },
+      "localization":{  
+         "RANSAC_iteration":1500,
+         "RANSAC_error":4
+      },
+      "triangulation":{  
+         "sanity_check_factor":7,
+         "angle_treshold":1.5,
+         "age_treshold": 8,
+         "pixel_treshold" : 35,
+         "reprojection_error_treshold": 30,
+         "bootframe_distance": 3
+      },
+      "bundle_adjustment":{  
+         "periode":10,
+         "window_size":20,
+         "max_iteration":15
+      }
+   },
+   "malaga":{  
+      "detection":{  
+         "rows":4,
+         "cols":5,
+         "radius":4,
+         "npoints":40,
+         "bins":128,
+         "minQuality":0.01,
+         "FilterSize":25,
+         "MinContrast":0.05,
+         "MetricThreshold":200,
+         "Threshold":0.0001,
+         "NumOctaves":1,
+         "NumScaleLevels":3,
+         "ScaleFactor":1.5,
+         "NumLevels": 8
+      },
+      "matching":{  
+         "maxBidirectionalError":2.7,
+         "radius_to_new_feature":4,
+         "KLT_score_limit":0.997,
+         "block_size":31
+      },
+      "localization":{  
+         "RANSAC_iteration":3000,
+         "RANSAC_error":3.5
+      },
+      "triangulation":{  
+         "sanity_check_factor":7,
+         "angle_treshold":1.5,
+         "age_treshold": 10,
+         "pixel_treshold" : 35,
+         "reprojection_error_treshold": 30,
+         "bootframe_distance": 4
+      },
+      "bundle_adjustment":{  
+         "periode":10,
+         "window_size":20,
+         "max_iteration":20
+      }
+   },
+   "parking":{  
+      "detection":{  
+         "rows":3,
+         "cols":3,
+         "radius":6,
+         "npoints":30,
+         "bins":128,
+         "minQuality":0.05,
+         "FilterSize":11,
+         "MinContrast":0.05,
+         "MetricThreshold":200,
+         "Threshold":0.0001,
+         "NumOctaves":1,
+         "NumScaleLevels":3,
+         "ScaleFactor":1.5,
+         "NumLevels": 6
+      },
+      "matching":{  
+         "maxBidirectionalError":2.8,
+         "radius_to_new_feature":5,
+         "KLT_score_limit":0.996,
+         "block_size":31
+      },
+      "localization":{  
+         "RANSAC_iteration":2000,
+         "RANSAC_error":8
+      },
+      "triangulation":{  
+         "sanity_check_factor":7,
+         "angle_treshold":5,
+         "age_treshold": 8,
+         "pixel_treshold" : 35,
+         "reprojection_error_treshold": 30,
+         "bootframe_distance": 4
+      },
+      "bundle_adjustment":{  
+         "periode":10,
+         "window_size":12,
+         "max_iteration":20
+      }
+   },
+   "mydataset_ros":{  
+      "detection":{  
+         "rows":3,
+         "cols":3,
+         "radius":6,
+         "npoints":30,
+         "bins":128,
+         "minQuality":0.05,
+         "FilterSize":11,
+         "MinContrast":0.05,
+         "MetricThreshold":200,
+         "Threshold":0.0001,
+         "NumOctaves":1,
+         "NumScaleLevels":3,
+         "ScaleFactor":1.5,
+         "NumLevels": 8
+      },
+      "matching":{  
+         "maxBidirectionalError":5,
+         "radius_to_new_feature":20,
+         "KLT_score_limit":0.700,
+         "block_size":5
+      },
+      "localization":{  
+         "RANSAC_iteration":2000,
+         "RANSAC_error":16
+      },
+      "triangulation":{  
+         "sanity_check_factor":7,
+         "angle_treshold":0.5,
+         "age_treshold": 8,
+         "pixel_treshold": 2,
+         "reprojection_error_treshold": 30,
+         "bootframe_distance":4
+      },
+      "bundle_adjustment":{  
+         "periode":2,
+         "window_size":10,
+         "max_iteration":20
+      }
+   },
+    "mydataset_indoor":{  
+      "detection":{  
+         "rows":3,
+         "cols":3,
+         "radius":6,
+         "npoints":100,
+         "bins":128,
+         "minQuality":0.05,
+         "FilterSize":11,
+         "MinContrast":0.05,
+         "MetricThreshold":200,
+         "Threshold":0.0001,
+         "NumOctaves":1,
+         "NumScaleLevels":3,
+         "ScaleFactor":1.5,
+         "NumLevels": 8
+      },
+      "matching":{  
+         "maxBidirectionalError":3,
+         "radius_to_new_feature":5,
+         "KLT_score_limit":0.980,
+         "block_size":31
+      },
+      "localization":{  
+         "RANSAC_iteration":4000,
+         "RANSAC_error":8
+      },
+      "triangulation":{  
+         "sanity_check_factor":8,
+         "angle_treshold":0.2,
+         "age_treshold": 8,
+         "pixel_treshold": 2,
+         "reprojection_error_treshold": 30,
+         "bootframe_distance":4
+      },
+      "bundle_adjustment":{  
+         "periode":5,
+         "window_size":12,
+         "max_iteration":10
+      }
+   }
+}
